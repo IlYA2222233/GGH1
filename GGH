@@ -1,0 +1,21 @@
+local Lighting = game:GetService("Lighting")
+local sky = Lighting:FindFirstChild("Sky") or Instance.new("Sky")
+sky.SkyboxBk = "rbxassetid://2350402582"
+sky.SkyboxDn = "rbxassetid://2350402582"
+sky.SkyboxFt = "rbxassetid://2350402582"
+sky.SkyboxLf = "rbxassetid://2350402582"
+sky.SkyboxRt = "rbxassetid://2350402582"
+sky.SkyboxUp = "rbxassetid://2350402582"
+sky.Parent = Lighting
+
+Lighting.FogColor = Color3.fromRGB(150, 150, 150)
+Lighting.FogEnd = 50000
+Lighting.Brightness = 1
+Lighting.OutdoorAmbient = Color3.fromRGB(150, 150, 150)
+Lighting.TimeOfDay = "12:00:00"
+
+if Lighting:FindFirstChild("sky") then
+    Lighting.sky:Destroy()
+
+
+end
